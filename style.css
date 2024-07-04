@@ -7,8 +7,6 @@
     --primary-black: #000;
 
     --text-light: #ffffff;
-    --soft-blue: #1e90ff;
-    --soft-green: #32cd32;
 
     --border-radius: 5px;
     --grid-padding: 2rem;
@@ -37,6 +35,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: var(--primary-white);
 }
 
 /* nav */
@@ -46,26 +45,74 @@ nav {
 /* nav */
 
 main {
-    /* width: 80%;
-    margin: 0 auto; */
-    border: 2px solid var(--primary-white);
-    padding: 5rem;
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
 }
 
-.heading-3 {
+p.time {
+    text-align: center;
+}
+
+.card {
     border: 2px solid var(--text-light);
-    width: 250px;
-    height: 250px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
+    padding: 1rem;
+    width: 100%;
+
+    h3.card-title {
+    }
+}
+
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.profile-picture {
+    /* grid-column: 3 span; */
+    /* grid-row: 1 span; */
+
+    img {
+        width: 100%;
+    }
+}
+
+.header {
+    /* grid-column: 6 span; */
+    /* width: 100%; */
+}
+
+.skills {
+    /* grid-column: 3 span; */
+    grid-row: 2 span;
+}
+
+.about {
+    /* grid-column: 6 span; */
 }
 
 h3 {
 }
+
+/* attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    /* fixme - change to light color */
+    color: #ffffff;
+}
+/* attribution */
 
 /* back to top */
 .back-to-top {
@@ -93,6 +140,122 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+    main {
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+
+        .card-title {
+            font-size: 24px;
+        }
+    }
+
+    .header {
+        p.title {
+            margin-top: -10px;
+        }
+
+        span a {
+            font-size: 28px;
+            margin-right: 5px;
+        }
+    }
+
+    .about {
+        p {
+            /* text-align: justify; */
+            line-height: 25px;
+        }
+    }
+
+    .skills {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-inline-start: -40px;
+        }
+        ul li {
+            list-style-type: none;
+        }
+    }
+
+    .experience {
+        span {
+            /* border: 2px solid var(--primary-white); */
+            width: 100%;
+
+            h5.title {
+                font-style: italic;
+                font-size: 16px;
+            }
+
+            p.company {
+                margin-top: -15px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .education {
+        a.current-education {
+            display: block;
+            width: 100%;
+            background: #222426;
+            padding: 5px 10px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            margin-bottom: 10px;
+        }
+
+        span.other-educ {
+            display: flex;
+            justify-content: space-between;
+            /* background: #222426; */
+            text-align: center;
+            border-radius: var(--border-radius);
+        }
+    }
+
+    .projects {
+        a {
+            font-size: 28px;
+            margin-right: 5px;
+        }
+    }
+
+    .goals {
+        ol {
+            margin-inline-start: -20px;
+            line-height: 30px;
+        }
+    }
+
+    .connect {
+        p {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .contact {
+        a {
+            display: block;
+            width: 100%;
+            background: #222426;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            margin-bottom: 10px;
+        }
+    }
+
     .back-to-top {
         bottom: 100px;
     }

@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Mahmud</title>
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"> -->
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
 
 </head>
 
@@ -27,13 +34,121 @@
         </ul>
     </nav>
     <main>
-        <div class="heading-3"><h3>I, Ahmed Mahmud</h3></div>
+        <div class="current-day-time">
+            <p class="time" id="time">
+               <span id="currentDay" data-testid="currentDay"></span>,
+               <span id="currentTime"  data-testid="currentTimeUTC"></span>
+            </p>
+        </div>
+
+        <div class="profile-picture">
+            <img src="img/ahmed.JPG" alt="Ahmed's Image" data-testid="slackProfilePicture">
+        </div>
+
+        <div class="card header">
+            <h1>Ahmed Mahmud</h1>
+            <p class="title">Frontend Developer</p>
+            <span>
+                <a href="https://www.linkedin.com/in/ahmedmahmud/"><i class="fa-brands fa-linkedin"
+                        ></i></a>
+                <a href="https://www.linkedin.com/in/ahmedmahmud/"><i class="fa-brands fa-square-x-twitter"
+                       ></i></a>
+                <a href="https://dev.to/ddevahmed"><i class="fa-brands fa-dev"></i></a>
+            </span>
+        </div>
+
+        <div class="card about">
+            <h3 class="card-title">About</h3>
+            <p>A driven Frontend Developer dedicated to crafting engaging and responsive web experiences. With a solid
+                foundation in HTML, CSS, and JavaScript, I bring creativity and precision to every project. I thrive on
+                solving complex problems and collaborating with teams to deliver innovative solutions. Passionate about
+                user-centered design, I aim to create seamless digital experiences that resonate with users. Outside of
+                coding, I enjoy exploring new technologies</p>
+        </div>
+
+        <div class="card skills">
+            <h3 class="card-title">Skills</h3>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Tailwind</li>
+                <li>React</li>
+                <li>Sql</li>
+                <li>Git/Github</li>
+            </ul>
+        </div>
+
+        <div class="card experience">
+            <h3 class="card-title">Experience</h3>
+            <span>
+                <h5 class="title">Frontend Developer</h5>
+                <p class="company">Digital Jewels</p>
+            </span>
+            <span>
+                <h5 class="title">Frontend Developer</h5>
+                <p class="company">Binfo Group</p>
+            </span>
+            <span>
+                <h5 class="title">Technical Trainer</h5>
+                <p class="company">Darussalam Computers</p>
+            </span>
+            <span>
+                <h5 class="title">Technical Trainer</h5>
+                <p class="company">Kaduna Ict Hub</p>
+            </span>
+        </div>
+
+        <div class="card education">
+            <h3 class="card-title">Education</h3>
+            <a href="hng.tech/learn" data-testid="hngLink" class="current-education">HNG Internship</a>
+            <span class="other-educ">
+                <a href="keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+                <a href="scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Link</a>
+            </span>
+        </div>
+
+        <div class="card projects">
+            <h3 class="card-title">Projects</h3>
+            <a href="https://github.com/dDevAhmed/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/dDevAhmed/"><i class="fa-brands fa-codepen"></i></a>
+        </div>
+
+        <div class="card goals">
+            <h3 class="card-title">Goals</h3>
+            <ol>
+                <li>To become an Industry Expert</li>
+                <li>To mentor newcomers and junior developers</li>
+                <li>To contribute to open source</li>
+                <li>To give back to community</li>
+            </ol>
+        </div>
+
+        <div class="card connect">
+            <h3 class="card-title">Connect on Slack</h3>
+            <p data-testid="slackDisplayName"><i class="fa-solid fa-user-check"></i> dDevAhmed</p>
+            <p><i class="fa-solid fa-user"></i> Ahmed Mahmud</p>
+            <p data-testid="slackEmail"><i class="fa-sharp fa-solid fa-envelope"></i> ahmedmahmud1994@hotmail.com</p>
+        </div>
+
+        <div class="card contact">
+            <h3 class="card-title">Contact</h3>
+            <a href="mailto:">Mail Me</a>
+            <a href="mailto:">Call Me</a>
+            <a href="#"><i class="fa-regular fa-download"></i> Resume</a>
+        </div>
     </main>
+
+    <div class="attribution">
+        Challenge by <a href="hng.tech/learn" target="_blank">HNG Tech</a>.
+        Coded by <a href="https://github.com/dDevAhmed/">Ahmed Mahmud</a>.
+    </div>
 
 
     <!-- <a href="#" class="back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></a> -->
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
