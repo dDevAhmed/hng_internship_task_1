@@ -72,5 +72,3 @@ You can view the live demo of the project at [HNG Task 1](https://ddevahmed.gith
 This project is a testament to my commitment to learning and growing as a frontend developer. It reflects my aspirations and the skills I've developed so far. I look forward to further honing my abilities through the HNG Internship and contributing to the tech community.
 
 Thank you for visiting my project!
-
-
