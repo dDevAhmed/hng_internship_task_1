@@ -281,11 +281,12 @@ a {
         a {
             display: block;
             width: 100%;
-            background: #222426;
+            background: rgba(255, 255, 255, 0.1);
             padding: 10px 20px;
             text-align: center;
             border-radius: var(--border-radius);
             margin-bottom: 10px;
+            word-break: break-all;
         }
     }
 
